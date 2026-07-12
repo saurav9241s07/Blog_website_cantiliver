@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Blog Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Blogify
+            </div>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+            <div class="buttons">
+
+                <button id="loginBtn">Login</button>
+                <button id="signupBtn">Sign Up</button>
+                <button id="logoutBtn">Logout</button>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="Share-story">
+
+        <h1>Share Your Stories With The World</h1>
+
+        <p>
+            Read blogs from thousands of writers or
+            publish your own articles.
+        </p>
+
+        <button>Explore Blogs</button>
+
+    </section>
+
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="search">
+
+        <input id="searchInput"
+            name="search"
+            type="text"
+            placeholder="Search blogs...">
+
+    </section>
+
+    <div style="text-align:center; margin:20px;">
+        <button id="addBlogBtn">Add Blog</button>
+    </div>
+
+
+
+    <!-- ================= BLOG SECTION ================= -->
+
+    <section class="blogs">
+
+        <h2>Latest Blogs</h2>
+
+        <div class="blog-container" id="blogContainer">
+            
+
+        </div>
+
+    </section>
+
+    <!-- ================= LOGIN MODEL ================= -->
+
+    <div id="loginModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <h2>Login</h2>
+
+        <form id="loginForm">
+
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="Enter Email"
+                required>
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Enter Password"
+                required>
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        </div>
+
+    </div>
+
+    <!-- ================= SIGNUP MODEL ================= -->
+
+
+    <div id="signupModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="signup-close">&times;</span>
+
+            <h2>Sign Up</h2>
+
+        <form id="signupForm">
+
+            <input
+                type="text"
+                id="signupName"
+                placeholder="Enter Name"
+                required>
+
+            <input
+                type="email"
+                id="signupEmail"
+                placeholder="Enter Email"
+                required>
+
+            <input
+                type="password"
+                id="signupPassword"
+                placeholder="Enter Password"
+                required>
+
+            <button type="submit">
+                Create Account
+            </button>
+
+        </form>
+
+        </div>
+
+    </div>
+
+    <div id="addBlogModal" class="modal">
+
+        <div class="modal-content">
+
+            <span id="closeAddBlog">&times;</span>
+
+            <h2>Add Blog</h2>
+
+            <form id="addBlogForm">
+
+                <input type="text" id="title" placeholder="Title" required>
+
+                <input type="text" id="category" placeholder="Category" required>
+
+                <input type="text" id="author" placeholder="Author" required>
+
+                <input type="text" id="date" placeholder="Date" required>
+
+                <textarea
+                    id="content"
+                    placeholder="Blog Content"
+                    style="width:100%;height:120px;padding:10px;margin-bottom:15px;"
+                    required></textarea>
+
+                <button type="submit">
+                    Add Blog
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Blogify. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
