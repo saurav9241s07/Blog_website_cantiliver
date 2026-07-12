@@ -2,7 +2,7 @@ const blogContainer = document.getElementById("blogContainer");
 
 async function loadBlogs() {
 
-    const response = await fetch("http://localhost:5000/blogs");
+    const response = await fetch("https://blog-website-cantiliver.onrender.com/blogs");
 
     const blogs = await response.json();
 
@@ -155,7 +155,7 @@ loginForm.addEventListener("submit", async function(e){
 
     const password = document.getElementById("loginPassword").value;
 
-    const response = await fetch("http://localhost:5000/login",{
+    const response = await fetch("https://blog-website-cantiliver.onrender.com/login",{
 
         method:"POST",
 
@@ -204,7 +204,7 @@ signupForm.addEventListener("submit", async function(e){
 
     const password = document.getElementById("signupPassword").value;
 
-    const response = await fetch("http://localhost:5000/signup",{
+    const response = await fetch("https://blog-website-cantiliver.onrender.com/signup",{
 
         method:"POST",
 
@@ -258,7 +258,7 @@ addBlogForm.addEventListener("submit", async function(e){
 
     };
 
-    const response = await fetch("http://localhost:5000/blogs",{
+    const response = await fetch("https://blog-website-cantiliver.onrender.com/blogs",{
 
         method:"POST",
 
@@ -282,7 +282,7 @@ addBlogForm.addEventListener("submit", async function(e){
 
 async function deleteBlog(id){
 
-    const response = await fetch(`http://localhost:5000/blogs/${id}`,{
+    const response = await fetch(`https://blog-website-cantiliver.onrender.com/blogs/${id}`,{
 
         method:"DELETE"
 
@@ -312,7 +312,7 @@ async function editBlog(id){
 
     const image = "https://picsum.photos/300/200?random=" + Math.floor(Math.random() * 1000);
 
-    const response = await fetch(`http://localhost:5000/blogs/${id}`, {
+    const response = await fetch(`https://blog-website-cantiliver.onrender.com/blogs/${id}`, {
 
         method: "PUT",
 
